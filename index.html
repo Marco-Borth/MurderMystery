@@ -1,0 +1,62 @@
+<html>
+
+    <head>
+
+        <title>Murder Mystery</title>
+        <script type="text/javascript"
+                src="sources/DialogSystem.js">
+        </script>
+        <script type="text/javascript"
+                src="sources/GameObject.js">
+        </script>
+        <script type="text/javascript"
+                src="sources/BiotechSimulations.js">
+        </script>
+        <script type="text/javascript"
+                src="sources/RoomTraversal.js">
+        </script>
+        <script type="text/javascript"
+                src="sources/ObjectInteraction.js">
+        </script>
+        <script type="text/javascript"
+                src="sources/GameLoop.js">
+        </script>
+        <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <link rel="stylesheet" type="text/css" href="styles/ObjectStyles.css">
+        <link rel="stylesheet" type="text/css" href="styles/ButtonStyles.css">
+        <link rel="stylesheet" type="text/css" href="styles/DialogSystem.css">
+
+    </head>
+
+    <body>
+
+        <div id="page">
+
+            <aside id="userMenu">
+                <section id="invScreen">
+                    <p id="inventoryTitle">Inventory</p>
+
+                    <p style="color:red;" id="red">Red = DNA</p>
+
+                    <p style="color:yellow;" id="yellow">Yellow = FPS</p>
+
+                    <p style="color:blue;" id="blue">Blue = TLC</p>
+
+                </section> <!-- End invScreen-->
+                <section id="navButtons">
+                    <button id="labButton" onclick="traverse('lab')">Go To Lab</button>
+
+                    <button id="leftButton" class="arrowButton" onclick="traverse('left')"></button>
+
+                    <button id="rightButton" class="arrowButton" onclick="traverse('right')"></button>
+                </section> <!-- End navButtons -->
+
+            </aside> <!-- End userMenu -->
+
+            <div id="gameScreen" class="pageSection"></div>
+
+        </div> <!-- End Page -->
+
+    </body>
+
+</html>
